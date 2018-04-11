@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_land"
+    android:orientation="vertical"
+    tools:context="com.mymusic.MainActivity">
+
+    <TextView
+        android:id="@+id/dance_category"
+        style="@style/NormalText"
+        android:paddingTop="@dimen/margin40"
+        android:drawableLeft="@drawable/dance"
+        android:drawablePadding="@dimen/margin20"
+        android:text="@string/dance"></TextView>
+
+    <TextView
+        android:id="@+id/rock_category"
+        style="@style/NormalText"
+        android:drawableLeft="@drawable/rock"
+        android:drawablePadding="@dimen/margin20"
+        android:text="@string/rock"></TextView>
+
+    <TextView
+        android:id="@+id/jazz_category"
+        style="@style/NormalText"
+        android:drawableLeft="@drawable/jazz"
+        android:drawablePadding="@dimen/margin20"
+        android:text="@string/jazz"></TextView>
+
+    <TextView
+        android:id="@+id/latin_category"
+        style="@style/NormalText"
+        android:drawableLeft="@drawable/latin"
+        android:drawablePadding="@dimen/margin20"
+        android:text="@string/latin"></TextView>
+
+    <TextView
+        android:id="@+id/hiphop_category"
+        style="@style/NormalText"
+        android:drawableLeft="@drawable/hiphop"
+        android:drawablePadding="@dimen/margin20"
+        android:text="@string/hiphop"></TextView>
+
+</LinearLayout>

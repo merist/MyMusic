@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Music</string>
+    <string name="dance">Dance</string>
+    <string name="jazz">Jazz</string>
+    <string name="hiphop">Hip hop</string>
+    <string name="rock">Rock</string>
+    <string name="latin">Latin</string>
+    <string name="title_activity_playlist">PlaylistActivity</string>
+    <string name="black_eyed_peas">The Black Eyed Peas</string>
+    <string name="i_gotta_feeling">I Gotta Feeling</string>
+</resources>
