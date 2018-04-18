@@ -8,4 +8,25 @@
     <string name="title_activity_playlist">PlaylistActivity</string>
     <string name="black_eyed_peas">The Black Eyed Peas</string>
     <string name="i_gotta_feeling">I Gotta Feeling</string>
+    <string name="chainsmokers_coldplay">The Chainsmokers ft Coldplay</string>
+    <string name="something_just_like_this">Something Just Like This</string>
+    <string name="it_aint_me">It aint me</string>
+    <string name="kygo_selena_gomez">Kygo ft Selena Gomez</string>
+    <string name="rihanna_harris">Rihanna ft Calvin Harris</string>
+    <string name="this_is_what_you_came_for"> This Is What You Came For</string>
+    <string name="nirvana">Nirvana</string>
+    <string name="smell_like_teen_spirit">Smells like teen spirit</string>
+    <string name="bon_jovi">Bon Jovi</string>
+    <string name="livin_on_prayer">Livin\' on prayer</string>
+    <string name="imagine_dragons">Imagine dragons</string>
+    <string name="radioactive">Radioactive</string>
+    <string name="u2">U2</string>
+    <string name="with_or_without_you">With or without you</string>
+    <string name="title_activity_song">SongActivity</string>
+    <string name="louis_armstrong">Louis Armstrong</string>
+    <string name="what_wonderful_world">What a wonderful world</string>
+    <string name="shakira">Shakira</string>
+    <string name="la_tortura">La tortura</string>
+    <string name="eminem">Eminem</string>
+    <string name="stan">Stan</string>
 </resources>

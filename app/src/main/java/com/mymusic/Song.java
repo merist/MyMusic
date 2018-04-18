@@ -8,7 +8,7 @@ public class Song {
 
     private String songTitle;
     private String artistName;
-    private int imageAlbumId;
+    private String imageAlbumId;
 
     /*
      * Create a new Song object.
@@ -17,17 +17,17 @@ public class Song {
      * @param artistName is the name of the artist (e.g. Adele)
      * @param songTitle is the corresponding song title (e.g Skyfall)
      **/
-    public Song(int imageAlbumId, String songTitle, String artistName) {
+    public Song(String imageAlbumId, String songTitle, String artistName) {
         this.imageAlbumId = imageAlbumId;
         this.songTitle = songTitle;
         this.artistName = artistName;
     }
 
-    public int getImageAlbumId() {
+    public String getImageAlbumId() {
         return imageAlbumId;
     }
 
-    public void setImageAlbumId(int imageAlbumId) {
+    public void setImageAlbumId(String imageAlbumId) {
         this.imageAlbumId = imageAlbumId;
     }
 
