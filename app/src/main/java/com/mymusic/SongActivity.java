@@ -1,25 +1,19 @@
 package com.mymusic;
 
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 public class SongActivity extends AppCompatActivity {
 
-    MediaPlayer mediaPlayer;
-    int songId;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_song);
-
-        ImageButton btnPlay = (ImageButton) findViewById(R.id.buttonPlay);
-        ImageButton btnStop = (ImageButton) findViewById(R.id.buttonStop);
 
         Intent intent = getIntent();
         String artistName = intent.getStringExtra("artistName");
@@ -35,5 +29,14 @@ public class SongActivity extends AppCompatActivity {
         if (imageId != null) {
             imageView.setImageResource(Integer.valueOf(imageId));
         }
+        // Home button to return in the main screen
+        ImageButton homeImageButton = (ImageButton) findViewById(R.id.home);
+        homeImageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentMain = new Intent(SongActivity.this, MainActivity.class);
+                startActivity(intentMain);
+            }
+        });
     }
 }

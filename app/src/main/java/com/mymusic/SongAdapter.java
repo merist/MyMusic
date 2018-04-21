@@ -68,7 +68,7 @@ public class SongAdapter extends ArrayAdapter<Song> {
 
         // Find the ImageView in the song_item.xml layout with the ID list_item_icon
         ImageView iconView = (ImageView) listItemView.findViewById(R.id.list_item_icon);
-        // Get the image resource ID from the current AndroidFlavor object and
+        // Get the image resource ID from the current Song object and
         // set the image to iconView
         iconView.setImageResource(Integer.valueOf(currentSong.getImageAlbumId()));
 

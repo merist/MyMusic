@@ -12,6 +12,4 @@ public class Constants {
     public static String LATIN_CATEGORY = "latin_category";
     public static String HIPHOP_CATEGORY = "hiphop_category";
     public static String EXTRA_MUSIC_CATEGORY = "music_category";
-    public static String EXTRA_SONG_POSITION = "position";
-
 }

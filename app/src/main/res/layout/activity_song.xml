@@ -7,17 +7,25 @@
     android:background="@color/colorWhite"
     tools:context="com.mymusic.SongActivity">
 
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin10"
+        android:background="@color/colorWhite"
+        android:src="@drawable/home"/>
+
     <ImageView
         android:id="@+id/imageId"
-        android:layout_marginTop="@dimen/margin40"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_marginTop="@dimen/margin20"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
         android:layout_gravity="center"/>
 
     <TextView
         android:id="@+id/songTitleId"
         android:layout_width="match_parent"
-        android:layout_marginTop="@dimen/margin40"
+        android:layout_marginTop="@dimen/margin20"
         android:layout_height="wrap_content"
         style="@style/LargeText"
         android:text="Title"/>

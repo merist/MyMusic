@@ -5,7 +5,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageButton;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -15,10 +17,21 @@ public class PlaylistActivity extends AppCompatActivity {
     ArrayList<Song> songList = new ArrayList<>();
 
     String musicCategory;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_playlist);
+
+        // Home button to return in the main screen
+        ImageButton homeImageButton = (ImageButton) findViewById(R.id.home);
+        homeImageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentMain = new Intent(PlaylistActivity.this, MainActivity.class);
+                startActivity(intentMain);
+            }
+        });
 
         Intent intent = getIntent();
         musicCategory = intent.getStringExtra(Constants.EXTRA_MUSIC_CATEGORY);
@@ -42,13 +55,13 @@ public class PlaylistActivity extends AppCompatActivity {
                     getText(R.string.nirvana).toString()));
             songList.add(new Song(String.valueOf(R.drawable.u2), getText(R.string.with_or_without_you).toString(),
                     getText(R.string.u2).toString()));
-        }else if (musicCategory.equals(Constants.JAZZ_CATEGORY)) {
+        } else if (musicCategory.equals(Constants.JAZZ_CATEGORY)) {
             songList.add(new Song(String.valueOf(R.drawable.louis_armstrong), getText(R.string.what_wonderful_world).toString(),
                     getText(R.string.louis_armstrong).toString()));
-        }else if (musicCategory.equals(Constants.LATIN_CATEGORY)) {
+        } else if (musicCategory.equals(Constants.LATIN_CATEGORY)) {
             songList.add(new Song(String.valueOf(R.drawable.shakira), getText(R.string.la_tortura).toString(),
                     getText(R.string.shakira).toString()));
-        }else{
+        } else {
             songList.add(new Song(String.valueOf(R.drawable.eminem), getText(R.string.stan).toString(),
                     getText(R.string.eminem).toString()));
         }
@@ -66,11 +79,12 @@ public class PlaylistActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(PlaylistActivity.this, SongActivity.class);
-                intent.putExtra("artistName",songList.get(position).getArtistName());
+                intent.putExtra("artistName", songList.get(position).getArtistName());
                 intent.putExtra("songTitle", songList.get(position).getSongTitle());
-                intent.putExtra("imageId",  songList.get(position).getImageAlbumId());
+                intent.putExtra("imageId", songList.get(position).getImageAlbumId());
                 startActivity(intent);
             }
         });
+
     }
 }

@@ -10,9 +10,9 @@
     <TextView
         android:id="@+id/dance_category"
         style="@style/MainText"
-        android:paddingTop="@dimen/margin20"
         android:drawableLeft="@drawable/dance"
         android:drawablePadding="@dimen/margin20"
+        android:paddingTop="@dimen/margin20"
         android:text="@string/dance"></TextView>
 
     <TextView
